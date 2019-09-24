@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: codepad.online:1.#{Build.BuildId}#
+    ports:
+      - 80:80
+    networks:
+      appnet:
+        aliases:
+          - codepad.online
+networks:
+  appnet: {}

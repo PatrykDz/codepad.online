@@ -5,7 +5,7 @@ services:
     # image: codepad.online:1.#{Build.BuildId}#
     image: codepad.online:0.1.0
     ports:
-      - 80:80
+      - 5200:80
     networks:
       appnet:
         aliases:

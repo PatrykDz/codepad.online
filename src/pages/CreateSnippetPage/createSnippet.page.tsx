@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useState, EventHandler} from 'react'
+import React, {FunctionComponent, useState, EventHandler, CSSProperties} from 'react'
 import styled from 'styled-components';
 import MonacoEditor, {ChangeHandler} from 'react-monaco-editor';
 import {Nav, INavLink} from 'office-ui-fabric-react/lib/Nav';
@@ -32,29 +32,27 @@ const CreateSnippetPage: FunctionComponent = (props) => {
         setCode(newValue);
     }
 
-    const StyledContainer = styled.div`
-        display: grid;
-        width: 100%;
-        height: 100vh;
-        
-        grid-template-columns: 2fr 10fr;
-    `
+    const containerStyle: CSSProperties = {
+        display: 'grid',
+        width: '100%',
+        height: '100vh',
+        gridTemplateColumns: '2fr 10fr'
+    };
 
     const onLinkClick = () => console.log('click');
 
     return (
         <React.Fragment>
-            <StyledContainer>
+            <div style={containerStyle}>
                 <Nav
                     onLinkClick={onLinkClick}
-                    selectedKey="key3"
+                    selectedKey="key1"
                     expandButtonAriaLabel="Expand or collapse"
                     selectedAriaLabel="Selected"
                     ariaLabel="Nav basic example"
                     styles={{
                         root: {
                             boxSizing: 'border-box',
-                            border: '1px solid #eee',
                             overflowY: 'auto'
                         }
                     }}
@@ -62,18 +60,19 @@ const CreateSnippetPage: FunctionComponent = (props) => {
                         {
                             links: [
                                 {
-                                    name: 'Home',
-                                    url: 'http://example.com',
+                                    name: 'Documents',
+                                    url: '',
                                     links: [
                                         {
-                                            name: 'Activity',
-                                            url: 'http://msn.com',
+                                            name: 'Current Document',
+                                            url: '',
                                             key: 'key1',
-                                            target: '_blank'
+                                            target: '_blank',
+                                            isExpanded: true
                                         },
                                         {
-                                            name: 'MSN',
-                                            url: 'http://msn.com',
+                                            name: '+ New Document',
+                                            url: '',
                                             disabled: true,
                                             key: 'key2',
                                             target: '_blank'
@@ -81,13 +80,6 @@ const CreateSnippetPage: FunctionComponent = (props) => {
                                     ],
                                     isExpanded: true
                                 },
-                                {
-                                    name: 'Documents',
-                                    url: 'http://example.com',
-                                    key: 'key3',
-                                    isExpanded: true,
-                                    target: '_blank'
-                                }
                             ]
                         }
                     ]}
@@ -100,9 +92,8 @@ const CreateSnippetPage: FunctionComponent = (props) => {
                     value={code}
                     options={options}
                     onChange={onChange}
-                    // editorDidMount={::this.editorDidMount}
                 />
-            </StyledContainer>
+            </div>
         </React.Fragment>
     )
 }

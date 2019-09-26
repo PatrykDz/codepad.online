@@ -2,14 +2,19 @@
 
 # dependencies
 /node_modules
+/codepad/node_modules
 /.pnp
 .pnp.js
+codepad/.pnp
+codepad/.pnp.js
 
 # testing
 /coverage
+codepad/coverage
 
 # production
 /build
+codepad/build
 
 # misc
 .DS_Store

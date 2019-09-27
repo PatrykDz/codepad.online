@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="" />
+    <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/CodePad.Domain.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/CodePad.Domain.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/CodePad.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/CodePad.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/CodePad.Domain.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodePad.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/CodePad.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/CodePad.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.sln" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,16 +36,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CodePad.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodePad.Api/Startup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodePad.Api/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodePad.Api/Controllers/WeatherForecastController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CodePad.Api/Controllers/SnippetController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Api/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Api/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Api/Controllers/SnippetController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetController.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Domain/Class1.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Domain/Model/Snippet.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Class1.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +134,20 @@
       <updated>1569529233735</updated>
       <workItem from="1569529235551" duration="181000" />
       <workItem from="1569529481407" duration="606000" />
+      <workItem from="1569530217767" duration="1586000" />
+      <workItem from="1569610618019" duration="758000" />
+      <workItem from="1569611844804" duration="926000" />
+      <workItem from="1569626280947" duration="575000" />
+      <workItem from="1569626898344" duration="255000" />
     </task>
+    <task id="LOCAL-00001" summary="Added simple .NET Core 3.0 Api">
+      <created>1569530307979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569530307979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +171,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="Added simple .NET Core 3.0 Api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simple .NET Core 3.0 Api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

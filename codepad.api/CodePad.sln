@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePad.Api", "CodePad.Api\CodePad.Api.csproj", "{0CC77D1D-12E7-4BBA-8989-4706EEBF6DB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePad.Domain", "CodePad.Domain\CodePad.Domain.csproj", "{A63BADC7-C656-46F7-969A-B647C4257D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePad.Adapters.Mongo", "CodePad.Adapters.Mongo\CodePad.Adapters.Mongo.csproj", "{8298C08A-E361-4B30-B38B-DDD37873E326}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{0CC77D1D-12E7-4BBA-8989-4706EEBF6DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CC77D1D-12E7-4BBA-8989-4706EEBF6DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CC77D1D-12E7-4BBA-8989-4706EEBF6DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63BADC7-C656-46F7-969A-B647C4257D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63BADC7-C656-46F7-969A-B647C4257D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63BADC7-C656-46F7-969A-B647C4257D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63BADC7-C656-46F7-969A-B647C4257D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8298C08A-E361-4B30-B38B-DDD37873E326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8298C08A-E361-4B30-B38B-DDD37873E326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8298C08A-E361-4B30-B38B-DDD37873E326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8298C08A-E361-4B30-B38B-DDD37873E326}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

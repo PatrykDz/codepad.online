@@ -1,0 +1,8 @@
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.deps.json
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.csprojAssemblyReference.cache
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.AssemblyInfoInputs.cache
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.AssemblyInfo.cs
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb

@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.0": {
       "CodePad.Api/1.0.0": {
         "dependencies": {
+          "CodePad.Domain": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -312,6 +313,14 @@
         },
         "compile": {
           "CodePad.Api.dll": {}
+        }
+      },
+      "CodePad.Domain/1.0.0": {
+        "runtime": {
+          "CodePad.Domain.dll": {}
+        },
+        "compile": {
+          "CodePad.Domain.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -2010,6 +2019,11 @@
   },
   "libraries": {
     "CodePad.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CodePad.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

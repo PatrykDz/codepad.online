@@ -24,6 +24,54 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
+            "projectReferences": {
+              "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj": {
+                "projectPath": "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj",
+        "projectName": "CodePad.Domain",
+        "projectPath": "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj",
+        "packagesPath": "/home/patryk/.nuget/packages/",
+        "outputPath": "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/patryk/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },

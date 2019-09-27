@@ -4,6 +4,21 @@
     <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_CodePad.1398930537.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="CodePad.Adapters.Mongo" t="IncludeRecursive">
+        <e p="CodePad.Adapters.Mongo.csproj" t="IncludeRecursive" />
+        <e p="MongoInitializer.cs" t="Include" />
+        <e p="Snippets" t="Include">
+          <e p="SnippetsService.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CodePad.Adapters.Mongo.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="CodePad.Api" t="IncludeRecursive">
         <e p="CodePad.Api.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
@@ -23,6 +38,23 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="CodePad.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CodePad.Domain" t="IncludeRecursive">
+        <e p="CodePad.Domain.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Snippet.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ISnippetsService.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="CodePad.Domain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>

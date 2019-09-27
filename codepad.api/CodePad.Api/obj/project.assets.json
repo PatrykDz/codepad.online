@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "CodePad.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/CodePad.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodePad.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CodePad.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CodePad.Domain/CodePad.Domain.csproj",
+      "msbuildProject": "../CodePad.Domain/CodePad.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "CodePad.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/patryk/.nuget/packages/": {}
@@ -30,7 +49,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj": {
+              "projectPath": "/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Domain/CodePad.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

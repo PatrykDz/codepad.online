@@ -16,3 +16,6 @@
 /media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.RazorTargetAssemblyInfo.cache
 /media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.dll
 /media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.pdb
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Domain.dll
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Domain.pdb
+/media/patryk/BC5CA9425CA8F7F2/Solutions/Domains/codepad.online/codepad/codepad.api/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csproj.CopyComplete

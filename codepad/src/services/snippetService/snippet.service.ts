@@ -3,8 +3,9 @@ import * as https from "https";
 
 import { ISnippetService } from './types';
 
-const BASE_URL = 'http://codepad.online'
-const  SNIPPETS_API_URL = '/snippets'
+// const BASE_URL = 'http://codepad.online'
+const BASE_URL = 'http://localhost:5000'
+const SNIPPETS_API_URL = `${BASE_URL}/snippets`
 
 const instance = axios.create({
   baseURL: `${BASE_URL}`,

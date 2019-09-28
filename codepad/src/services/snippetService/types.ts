@@ -1,6 +1,10 @@
 import {AxiosPromise} from "axios";
 
+export interface ISnippet {
+    content: string
+}
+
 export interface ISnippetService {
-    getSnippet: (snippetId: string) => AxiosPromise<any>
-    createSnippet: (snippetId: string, data: any) => AxiosPromise<any>
+    getSnippet: (snippetId: string) => AxiosPromise<ISnippet>
+    createSnippet: (snippetId: string, data: any) => AxiosPromise<ISnippet>
 }

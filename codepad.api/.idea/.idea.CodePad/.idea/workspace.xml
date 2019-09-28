@@ -2,55 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Dtos/SnippetDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Mappers/SnippetDtoMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Domain.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Domain.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/DnsClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/MongoDB.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/MongoDB.Driver.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/MongoDB.Driver.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/SharpCompress.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codepad.rest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/bin/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/CodePad.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/CodePad.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CodePad.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Api.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/bin/Debug/netcoreapp3.0/CodePad.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/CodePad.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/Debug/netcoreapp3.0/CodePad.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Domain/bin/Debug/netcoreapp3.0/CodePad.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Domain/bin/Debug/netcoreapp3.0/CodePad.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Domain/bin/Debug/netcoreapp3.0/CodePad.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Domain/bin/Debug/netcoreapp3.0/CodePad.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Domain/obj/Debug/netcoreapp3.0/CodePad.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codepad.rest" beforeDir="false" afterPath="$PROJECT_DIR$/codepad.rest" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Api/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,7 +36,6 @@
         <option value="$PROJECT_DIR$/CodePad.Domain/Model/Snippet.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Class1.cs" />
         <option value="$PROJECT_DIR$/CodePad.Domain/Repositories/ISnippetsService.cs" />
-        <option value="$PROJECT_DIR$/CodePad.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetController.cs" />
@@ -89,6 +43,7 @@
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Mappers/SnippetDtoMapper.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Dtos/SnippetDto.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Api/Startup.cs" />
       </list>
     </option>
   </component>
@@ -177,7 +132,7 @@
       <workItem from="1569668448770" duration="744000" />
       <workItem from="1569677440862" duration="1183000" />
       <workItem from="1569692668205" duration="13000" />
-      <workItem from="1569700977281" duration="2528000" />
+      <workItem from="1569700977281" duration="5668000" />
     </task>
     <task id="LOCAL-00001" summary="Added simple .NET Core 3.0 Api">
       <created>1569530307979</created>

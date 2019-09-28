@@ -1,32 +1,55 @@
-import React, {FunctionComponent, useState, EventHandler, CSSProperties} from 'react'
+import React, {FunctionComponent, useState, EventHandler, CSSProperties, useEffect, useContext} from 'react'
 import styled from 'styled-components';
 import MonacoEditor, {ChangeHandler} from 'react-monaco-editor';
 import {Nav, INavLink} from 'office-ui-fabric-react/lib/Nav';
-
+import {snippetService} from '../../services/snippetService'
 
 const CreateSnippetPage: FunctionComponent = (props) => {
-    const [code, setCode] = useState(`  
-    // Define Typescript Interface Employee
-    interface Employee {
-        firstName: String;
-        lastName: String;
-        contractor?: Boolean;
-    }
 
-    // Use Typescript Interface Employee. 
-    // This should show you an error on john 
-    // as required attribute lastName is missing
-    const john:Employee = {
-        firstName:"John",
-        // lastName:"Smith"
-        // contractor:true
-    }
-`);
+    const [code, setCode] = useState('');
+    const [editor, setEditor] = useState(undefined);
+
+    useEffect(() => {
+        snippetService.getSnippet('n1234')
+            .then(res => {
+                changeEditorValue(res.data.content);
+            })
+            .catch(err => console.error(err));
+    }, [editor])
 
     const options = {
         selectOnLineNumbers: true,
         automaticLayout: true
     };
+
+    const editorDidMount = (editor: any) => {
+        if (editor) {
+            setEditor(editor);
+        }
+    };
+
+    const changeEditorValue = (value: string) => {
+        if (editor) {
+            // @ts-ignore
+            editor.setValue(value);
+        }
+    };
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+        if ((window.navigator.platform.match("Mac")
+            ? e.metaKey : e.ctrlKey)
+            && e.key == 's') {
+            e.preventDefault();
+            handleSave();
+        }
+    }
+
+    const handleSave = () => {
+        console.log(code);
+        snippetService.createSnippet("n1", {
+            content: code
+        });
+    }
 
     const onChange = (newValue: string): any => {
         setCode(newValue);
@@ -43,7 +66,7 @@ const CreateSnippetPage: FunctionComponent = (props) => {
 
     return (
         <React.Fragment>
-            <div style={containerStyle}>
+            <div style={containerStyle} onKeyDown={handleKeyDown}>
                 <Nav
                     onLinkClick={onLinkClick}
                     selectedKey="key1"
@@ -91,6 +114,7 @@ const CreateSnippetPage: FunctionComponent = (props) => {
                     theme="vs-dark"
                     value={code}
                     options={options}
+                    editorDidMount={editorDidMount}
                     onChange={onChange}
                 />
             </div>

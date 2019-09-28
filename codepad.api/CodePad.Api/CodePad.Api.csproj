@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\CodePad.Adapters.Mongo\CodePad.Adapters.Mongo.csproj" />
       <ProjectReference Include="..\CodePad.Domain\CodePad.Domain.csproj" />
     </ItemGroup>
 

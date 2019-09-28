@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CodePad.Adapters.Mongo.Snippets;
+using CodePad.Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,9 @@ namespace CodePad.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
+            // IoC
+            services.AddScoped<ISnippetsService, SnippetsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

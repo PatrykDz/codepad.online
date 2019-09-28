@@ -6,6 +6,12 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CodePad.Adapters.Mongo" t="IncludeRecursive">
         <e p="CodePad.Adapters.Mongo.csproj" t="IncludeRecursive" />
+        <e p="Dtos" t="Include">
+          <e p="SnippetDto.cs" t="Include" />
+        </e>
+        <e p="Mappers" t="Include">
+          <e p="SnippetDtoMapper.cs" t="Include" />
+        </e>
         <e p="MongoInitializer.cs" t="Include" />
         <e p="Snippets" t="Include">
           <e p="SnippetsService.cs" t="Include" />
@@ -22,7 +28,7 @@
       <e p="CodePad.Api" t="IncludeRecursive">
         <e p="CodePad.Api.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="SnippetController.cs" t="Include" />
+          <e p="SnippetsController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />

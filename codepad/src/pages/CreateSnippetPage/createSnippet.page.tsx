@@ -4,13 +4,19 @@ import MonacoEditor, {ChangeHandler} from 'react-monaco-editor';
 import {Nav, INavLink} from 'office-ui-fabric-react/lib/Nav';
 import {snippetService} from '../../services/snippetService'
 
-const CreateSnippetPage: FunctionComponent = (props) => {
+interface ICreateSnippetPageProps {
+    match: any
+}
+
+const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
+    props) => {
 
     const [code, setCode] = useState('');
     const [editor, setEditor] = useState(undefined);
 
     useEffect(() => {
-        snippetService.getSnippet('n1234')
+        const urlId = props.match.params.urlId || ''
+        snippetService.getSnippet(urlId)
             .then(res => {
                 changeEditorValue(res.data.content);
             })
@@ -45,8 +51,8 @@ const CreateSnippetPage: FunctionComponent = (props) => {
     }
 
     const handleSave = () => {
-        console.log(code);
-        snippetService.createSnippet("n1", {
+        const urlId = props.match.params.urlId || ''
+        snippetService.createSnippet(urlId, {
             content: code
         });
     }

@@ -39,8 +39,14 @@ namespace CodePad.Api.Controllers
             [FromRoute] string urlId,
             [FromBody] Snippet snippet)
         {
-            _snippetsService.CreateSnippet(snippet);
+            if (snippet == null)
+            {
+                return BadRequest();
+            }
 
+            snippet.UrlId = urlId;
+            
+            _snippetsService.CreateSnippet(snippet);
             return Ok();
         }
     }

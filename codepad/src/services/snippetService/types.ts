@@ -6,5 +6,5 @@ export interface ISnippet {
 
 export interface ISnippetService {
     getSnippet: (snippetId: string) => AxiosPromise<ISnippet>
-    createSnippet: (snippetId: string, data: any) => AxiosPromise<ISnippet>
+    createSnippet: (snippetId: string, snippet: ISnippet) => AxiosPromise<ISnippet>
 }

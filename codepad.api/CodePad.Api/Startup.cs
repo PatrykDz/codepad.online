@@ -62,7 +62,7 @@ namespace CodePad.Api
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-
+            
             app.UseCors("MyPolicy");
         }
     }

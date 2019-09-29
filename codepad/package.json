@@ -7,6 +7,7 @@
     "@types/node": "12.7.7",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "@types/react-router-dom": "^5.1.0",
     "axios": "^0.19.0",
     "monaco-editor": "^0.18.1",
     "monaco-editor-webpack-plugin": "^1.7.0",
@@ -14,6 +15,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-monaco-editor": "^0.31.0",
+    "react-router-dom": "^5.1.1",
     "react-scripts": "3.1.2",
     "styled-components": "^4.4.0",
     "typescript": "3.6.3"

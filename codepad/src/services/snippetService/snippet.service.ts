@@ -1,7 +1,7 @@
 import axios, {AxiosPromise} from 'axios'
 import * as https from "https";
 
-import { ISnippetService } from './types';
+import {ISnippet, ISnippetService} from './types';
 
 // const BASE_URL = 'http://codepad.online'
 const BASE_URL = 'http://localhost:5000'
@@ -22,7 +22,7 @@ export const snippetService : ISnippetService = {
     return instance.get(`${SNIPPETS_API_URL}/${snippetId}`)
   },
 
-  createSnippet: (snippetId: string, data: any) => {
-    return instance.post(`${SNIPPETS_API_URL}/${snippetId}`, data)
+  createSnippet: (snippetId: string, snippet: ISnippet) => {
+    return instance.post(`${SNIPPETS_API_URL}/${snippetId}`, snippet)
   }
 }

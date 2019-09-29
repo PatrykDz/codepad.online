@@ -33,14 +33,16 @@ namespace CodePad.Adapters.Mongo.Snippets
         public Snippet GetById(Guid id)
         {
             //var result = _collection.Find(x => x.Id == id).FirstOrDefault();
-            //return result.ToDomain();
+            //return result.ToDomain();t
             return new Snippet();
         }
 
         public Snippet GetByUrlId(string urlId)
         {
             var result = _collection.Find(x => x.UrlId == urlId).FirstOrDefault();
-            return result.ToDomain();
+            return result == null 
+                ? new Snippet() 
+                : result.ToDomain();
         }
     }
 }

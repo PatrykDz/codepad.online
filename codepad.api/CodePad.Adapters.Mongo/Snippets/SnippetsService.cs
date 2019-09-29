@@ -39,7 +39,11 @@ namespace CodePad.Adapters.Mongo.Snippets
 
         public Snippet GetByUrlId(string urlId)
         {
-            var result = _collection.Find(x => x.UrlId == urlId).FirstOrDefault();
+            var result = 
+                _collection
+                    .Find(x => x.UrlId == urlId)
+                    .SortByDescending(x => x.ModifiedDate)
+                    .FirstOrDefault();
             return result == null 
                 ? new Snippet() 
                 : result.ToDomain();

@@ -1,7 +1,7 @@
-using CodePad.Adapters.Mongo.Dtos;
+using CodePad.Api.Dtos;
 using CodePad.Domain.Model;
 
-namespace CodePad.Adapters.Mongo.Mappers
+namespace CodePad.Api.Mappers
 {
     public static class SnippetDtoMapper
     {
@@ -10,8 +10,7 @@ namespace CodePad.Adapters.Mongo.Mappers
             return new Snippet
             {
                 UrlId = dto.UrlId,
-                Content = dto.Content,
-                ModifiedDate = dto.ModifiedDate
+                Content = dto.Content
             };
         }
     }

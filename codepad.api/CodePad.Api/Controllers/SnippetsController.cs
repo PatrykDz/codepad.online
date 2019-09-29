@@ -1,4 +1,6 @@
-using CodePad.Domain.Model;
+using System;
+using CodePad.Api.Dtos;
+using CodePad.Api.Mappers;
 using CodePad.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -37,14 +39,16 @@ namespace CodePad.Api.Controllers
         [Route("{urlId}")]
         public IActionResult Create(
             [FromRoute] string urlId,
-            [FromBody] Snippet snippet)
+            [FromBody] SnippetDto snippetDto)
         {
-            if (snippet == null)
+            if (snippetDto == null)
             {
                 return BadRequest();
             }
 
+            var snippet = snippetDto.ToDomain();
             snippet.UrlId = urlId;
+            snippet.ModifiedDate = DateTime.Now;
             
             _snippetsService.CreateSnippet(snippet);
             return Ok();

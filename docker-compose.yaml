@@ -2,6 +2,22 @@
 version: '3.1'
 
 services:
+  app:
+    build: codepad/.
+    # image: codepad.online:1.#{Build.BuildId}#
+    image: codepad.online:0.1.0
+    ports:
+      - 5200:80
+    networks:
+      appnet:
+        aliases:
+          - codepad.online
+
+  api:
+    build: codepad.api/CodePad.Api/.
+    image: codepad.online.api:0.1.0
+    ports:
+      - 5120: 5000
 
   mongo:
     image: mongo
@@ -20,3 +36,20 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+
+
+# version: '3'
+# services:
+#   app:
+#     build: .
+#     # image: codepad.online:1.#{Build.BuildId}#
+#     image: codepad.online:0.1.0
+#     ports:
+#       - 5200:80
+#     networks:
+#       appnet:
+#         aliases:
+#           - codepad.online
+# networks:
+#   appnet: {}

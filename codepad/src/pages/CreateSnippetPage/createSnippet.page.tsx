@@ -38,6 +38,10 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
         if (editor) {
             // @ts-ignore
             editor.setValue(value);
+            // @ts-ignore
+            editor
+                ._standaloneKeybindingService
+                .addDynamicKeybinding('-expandLineSelection');
         }
     };
 

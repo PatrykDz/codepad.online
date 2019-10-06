@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/Dtos/SnippetDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodePad.Api/Mappers/SnippetDtoMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Dtos/SnippetDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Dtos/SnippetDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Mappers/SnippetDtoMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Mappers/SnippetDtoMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +45,12 @@
         <option value="$PROJECT_DIR$/CodePad.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" />
-        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Mappers/SnippetDtoMapper.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Mappers/SnippetDtoMapper.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Dtos/SnippetDto.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Dtos/SnippetDto.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Api/Dockerfile" />
+        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +139,8 @@
       <workItem from="1569668448770" duration="744000" />
       <workItem from="1569677440862" duration="1183000" />
       <workItem from="1569692668205" duration="13000" />
-      <workItem from="1569700977281" duration="10650000" />
+      <workItem from="1569700977281" duration="13358000" />
+      <workItem from="1570366207817" duration="1209000" />
     </task>
     <task id="LOCAL-00001" summary="Added simple .NET Core 3.0 Api">
       <created>1569530307979</created>

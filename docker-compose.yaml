@@ -21,7 +21,7 @@ services:
     networks:
       appnet:
         aliases:
-          - codepad.online
+          - api.codepad.online
 
   mongo:
     image: mongo
@@ -34,7 +34,7 @@ services:
     networks:
       appnet:
         aliases:
-          - codepad.online
+          - mongo.codepad.online
 
   mongo-express:
     image: mongo-express
@@ -47,7 +47,7 @@ services:
     networks:
       appnet:
         aliases:
-          - codepad.online
+          - mongo-express.codepad.online
 
 networks:
   appnet: {}

@@ -12,4 +12,9 @@
       <ProjectReference Include="..\CodePad.Domain\CodePad.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.Options, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      </Reference>
+    </ItemGroup>
+
 </Project>

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="" />
+    <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodePad.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/appsettings.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Api/Dtos/SnippetDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Api/Mappers/SnippetDtoMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/obj/Debug/netcoreapp3.0/CodePad.Adapters.Mongo.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Api/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,9 +47,7 @@
         <option value="$PROJECT_DIR$/CodePad.Domain/Model/Snippet.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Class1.cs" />
         <option value="$PROJECT_DIR$/CodePad.Domain/Repositories/ISnippetsService.cs" />
-        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetController.cs" />
-        <option value="$PROJECT_DIR$/CodePad.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/CodePad.Domain/Models/Snippet.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Controllers/SnippetsController.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Mappers/SnippetDtoMapper.cs" />
@@ -47,6 +55,10 @@
         <option value="$PROJECT_DIR$/CodePad.Api/Dtos/SnippetDto.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Dtos/SnippetDto.cs" />
         <option value="$PROJECT_DIR$/CodePad.Api/Dockerfile" />
+        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoConfig.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/CodePad.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" />
         <option value="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" />
       </list>
     </option>
@@ -137,7 +149,8 @@
       <workItem from="1569677440862" duration="1183000" />
       <workItem from="1569692668205" duration="13000" />
       <workItem from="1569700977281" duration="13358000" />
-      <workItem from="1570366207817" duration="1807000" />
+      <workItem from="1570366207817" duration="1903000" />
+      <workItem from="1570428883064" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Added simple .NET Core 3.0 Api">
       <created>1569530307979</created>

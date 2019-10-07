@@ -1,25 +1,31 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using CodePad.Adapters.Mongo;
 using CodePad.Adapters.Mongo.Snippets;
 using CodePad.Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace CodePad.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+//        public Startup(IConfiguration configuration)
+//        {
+//            // Configuration = configuration;
+//            
+//            var builder = new ConfigurationBuilder()
+//                .SetBasePath()
+//        }
+
+        public Startup(IWebHostEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -45,6 +51,11 @@ namespace CodePad.Api
                             .AllowAnyMethod();
                     });
             });
+
+            // appsettings.json
+            
+            services.AddOptions();
+            services.Configure<MongoConfig>(Configuration.GetSection("MongoConfig"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

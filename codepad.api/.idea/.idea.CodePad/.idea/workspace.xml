@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodePad/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/CodePad.Adapters.Mongo.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/MongoInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Adapters.Mongo/Snippets/SnippetsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodePad.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodePad.Api/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="88d08d7d-09ce-420c-ab18-6f4fb90e40a9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +141,7 @@
       <workItem from="1569692668205" duration="13000" />
       <workItem from="1569700977281" duration="13358000" />
       <workItem from="1570366207817" duration="1903000" />
-      <workItem from="1570428883064" duration="760000" />
+      <workItem from="1570428883064" duration="1068000" />
     </task>
     <task id="LOCAL-00001" summary="Added simple .NET Core 3.0 Api">
       <created>1569530307979</created>

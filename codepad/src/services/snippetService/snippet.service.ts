@@ -13,6 +13,7 @@ const instance = axios.create({
   headers: {
     'Access-Control-Allow-Origin': '*',
   },
+  withCredentials: false,
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
   }),

@@ -23,7 +23,8 @@ namespace CodePad.Api
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
             Configuration = builder.Build();
         }
@@ -34,15 +35,15 @@ namespace CodePad.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+
             // IoC
             services.AddScoped<ISnippetsService, SnippetsService>();
 
-            
+
             // CORS
             services.AddCors(options =>
             {
-                options.AddPolicy("MyPolicy",
+                options.AddPolicy("AllowAllOrigins",
                     builder =>
                     {
                         builder
@@ -50,10 +51,12 @@ namespace CodePad.Api
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });
+                
+                options.DefaultPolicyName = "AllowAllOrigins";
             });
 
             // appsettings.json
-            
+
             services.AddOptions();
             services.Configure<MongoConfig>(Configuration.GetSection("MongoConfig"));
         }
@@ -61,6 +64,8 @@ namespace CodePad.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("AllowAllOrigins");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -73,8 +78,6 @@ namespace CodePad.Api
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-            
-            app.UseCors("MyPolicy");
         }
     }
 }

@@ -1,6 +1,7 @@
 import React, {FunctionComponent} from 'react'
 import {Spinner} from 'office-ui-fabric-react/lib/Spinner';
 import styled from 'styled-components'
+
 import {snippetService} from '../../services/snippetService'
 
 const StyledContainer = styled.div`
@@ -13,9 +14,13 @@ const StyledContainer = styled.div`
 const HomePage: FunctionComponent = (props) => {
 
 snippetService.getNewSnippetUrlId()
-    .then(res => {
-        console.log(res.data)
+    .then((res)=> {
+        console.log(res.data);
+        window.location.href = res.data.urlId;
     });
+
+console.log(process.env);
+
 
 return (
     <React.Fragment>

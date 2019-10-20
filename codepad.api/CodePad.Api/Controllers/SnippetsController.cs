@@ -51,9 +51,9 @@ namespace CodePad.Api.Controllers
             var secondPart = string.Join(string.Empty, mStr.Skip(6).Take(6).Append(nextRandom));
             
             var array = new[] { int.Parse(firstPart), int.Parse(secondPart)};
-            var id = hashIds.Encode(array);
+            var urlId = hashIds.Encode(array);
 
-            return Ok(new {array, id});
+            return Ok(new {urlId});
         }
 
         [HttpPost]

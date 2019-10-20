@@ -1,7 +1,12 @@
+const rewireDefinePlugin = require('react-app-rewire-define-plugin')
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
 module.exports = function override(config, env) {
     //do stuff with the webpack config...
+
+    config = rewireDefinePlugin(config, env, {
+        'process.env': JSON.stringify(process.env)
+    })
 
     if (!config.plugins) {
         config.plugins = [];

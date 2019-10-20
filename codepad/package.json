@@ -13,6 +13,7 @@
     "monaco-editor-webpack-plugin": "^1.7.0",
     "office-ui-fabric-react": "^7.39.1",
     "react": "^16.9.0",
+    "react-app-rewire-define-plugin": "^1.0.0",
     "react-dom": "^16.9.0",
     "react-monaco-editor": "^0.31.0",
     "react-router-dom": "^5.1.1",
@@ -22,6 +23,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
+    "dev": "cross-env NODE_ENV=development && react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
@@ -43,6 +45,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^4.1.19",
+    "cross-env": "^6.0.3",
     "react-app-rewired": "^2.1.3"
   }
 }

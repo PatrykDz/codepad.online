@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {} from 'office-ui-fabric-react/';
 
 import './App.css';
 import HomePage from "./pages/HomePage";

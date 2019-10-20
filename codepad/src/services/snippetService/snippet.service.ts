@@ -27,6 +27,10 @@ export const snippetService : ISnippetService = {
     return instance.get(`${SNIPPETS_API_URL}/${snippetId}`)
   },
 
+  getNewSnippetUrlId: () => {
+    return instance.get(`${SNIPPETS_API_URL}/newUrlId`)
+  },
+
   createSnippet: (snippetId: string, snippet: ISnippet) => {
     return instance.post(`${SNIPPETS_API_URL}/${snippetId}`, snippet)
   }

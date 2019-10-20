@@ -5,7 +5,7 @@ services:
   app:
     build: codepad/
     # image: codepad.online:1.#{Build.BuildId}#
-    image: codepad.online:0.1.0
+    image: codepad.online:0.1.2
     ports:
       - 5200:80
     networks:
@@ -15,9 +15,9 @@ services:
 
   api:
     build: codepad.api/
-    image: codepad.online.api:0.1.0
+    image: codepad.online.api:0.1.2
     ports:
-      - 5120:5000
+      - 5121:5000 # 5120 is via ssl
     networks:
       appnet:
         aliases:

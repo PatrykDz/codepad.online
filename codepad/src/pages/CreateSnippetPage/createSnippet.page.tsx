@@ -1,18 +1,52 @@
 import React, {FunctionComponent, useState, EventHandler, CSSProperties, useEffect, useContext} from 'react'
 import styled from 'styled-components';
-import MonacoEditor, {ChangeHandler} from 'react-monaco-editor';
-import {Nav, INavLink} from 'office-ui-fabric-react/lib/Nav';
+import MonacoEditor from 'react-monaco-editor';
+import {Nav} from 'office-ui-fabric-react/lib/Nav';
+import {
+    MessageBarButton,
+    Link,
+    MessageBar,
+    MessageBarType,
+} from 'office-ui-fabric-react';
 import {snippetService} from '../../services/snippetService'
 
 interface ICreateSnippetPageProps {
     match: any
 }
 
+const StyledDefaultMessageContainer = styled.div`
+  grid-column-start: 2;
+  color: red;
+`
+
+const DefaultMessage = () => (
+    <MessageBar messageBarType={MessageBarType.success}>
+        All changes are saved
+    </MessageBar>
+);
+
+const UnsavedChanges = (props: any) => (
+    <MessageBar
+        messageBarType={MessageBarType.warning}
+        isMultiline={false}
+        dismissButtonAriaLabel="Save"
+        actions={
+            <div>
+                <MessageBarButton onClick={() => props.handleSave()}>Save</MessageBarButton>
+            </div>
+        }
+    >
+        You have unsaved changes. Press <Link>Ctrl + S</Link> to save.
+    </MessageBar>
+);
+
 const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
     props) => {
 
     const [code, setCode] = useState('');
     const [editor, setEditor] = useState(undefined);
+    const [saved, setSaved] = useState(true);
+
 
     useEffect(() => {
         const urlId = props.match.params.urlId || ''
@@ -38,6 +72,7 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
         if (editor) {
             // @ts-ignore
             editor.setValue(value);
+            setSaved(true);
             // @ts-ignore
             editor
                 ._standaloneKeybindingService
@@ -58,18 +93,22 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
         const urlId = props.match.params.urlId || ''
         snippetService.createSnippet(urlId, {
             content: code
+        }).then(res => {
+            setSaved(true)
         });
     }
 
     const onChange = (newValue: string): any => {
         setCode(newValue);
+        setSaved(false);
     }
 
     const containerStyle: CSSProperties = {
         display: 'grid',
         width: '100%',
         height: '100vh',
-        gridTemplateColumns: '2fr 10fr'
+        gridTemplateColumns: '2fr 10fr',
+        gridTemplateRows: '15fr 1fr'
     };
 
     const onLinkClick = () => console.log('click');
@@ -127,6 +166,10 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
                     editorDidMount={editorDidMount}
                     onChange={onChange}
                 />
+
+                <StyledDefaultMessageContainer>
+                    {saved ? <DefaultMessage/> : <UnsavedChanges handleSave={() => handleSave()}/>}
+                </StyledDefaultMessageContainer>
             </div>
         </React.Fragment>
     )

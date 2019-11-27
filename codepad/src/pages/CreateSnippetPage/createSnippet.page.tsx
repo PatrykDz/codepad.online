@@ -9,6 +9,7 @@ import {
     MessageBarType,
 } from 'office-ui-fabric-react';
 import {snippetService} from '../../services/snippetService'
+import SideNav from "../../components/SideNavComponent";
 
 interface ICreateSnippetPageProps {
     match: any
@@ -116,46 +117,48 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
     return (
         <React.Fragment>
             <div style={containerStyle} onKeyDown={handleKeyDown}>
-                <Nav
-                    onLinkClick={onLinkClick}
-                    selectedKey="key1"
-                    expandButtonAriaLabel="Expand or collapse"
-                    selectedAriaLabel="Selected"
-                    ariaLabel="Nav basic example"
-                    styles={{
-                        root: {
-                            boxSizing: 'border-box',
-                            overflowY: 'auto'
-                        }
-                    }}
-                    groups={[
-                        {
-                            links: [
-                                {
-                                    name: 'Documents',
-                                    url: '',
-                                    links: [
-                                        {
-                                            name: 'Current Document',
-                                            url: '',
-                                            key: 'key1',
-                                            target: '_blank',
-                                            isExpanded: true
-                                        },
-                                        {
-                                            name: '+ New Document',
-                                            url: '',
-                                            disabled: true,
-                                            key: 'key2',
-                                            target: '_blank'
-                                        }
-                                    ],
-                                    isExpanded: true
-                                },
-                            ]
-                        }
-                    ]}
-                />
+                <SideNav />
+
+                {/*<Nav*/}
+                {/*    onLinkClick={onLinkClick}*/}
+                {/*    selectedKey="key1"*/}
+                {/*    expandButtonAriaLabel="Expand or collapse"*/}
+                {/*    selectedAriaLabel="Selected"*/}
+                {/*    ariaLabel="Nav basic example"*/}
+                {/*    styles={{*/}
+                {/*        root: {*/}
+                {/*            boxSizing: 'border-box',*/}
+                {/*            overflowY: 'auto'*/}
+                {/*        }*/}
+                {/*    }}*/}
+                {/*    groups={[*/}
+                {/*        {*/}
+                {/*            links: [*/}
+                {/*                {*/}
+                {/*                    name: 'Documents',*/}
+                {/*                    url: '',*/}
+                {/*                    links: [*/}
+                {/*                        {*/}
+                {/*                            name: 'Current Document',*/}
+                {/*                            url: '',*/}
+                {/*                            key: 'key1',*/}
+                {/*                            target: '_blank',*/}
+                {/*                            isExpanded: true*/}
+                {/*                        },*/}
+                {/*                        {*/}
+                {/*                            name: '+ New Document',*/}
+                {/*                            url: '',*/}
+                {/*                            disabled: true,*/}
+                {/*                            key: 'key2',*/}
+                {/*                            target: '_blank'*/}
+                {/*                        }*/}
+                {/*                    ],*/}
+                {/*                    isExpanded: true*/}
+                {/*                },*/}
+                {/*            ]*/}
+                {/*        }*/}
+                {/*    ]}*/}
+                {/*/>*/}
                 <MonacoEditor
                     width="100%"
                     height="100%"

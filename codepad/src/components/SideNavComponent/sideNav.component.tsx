@@ -1,8 +1,9 @@
 import React, {FunctionComponent, useState} from 'react'
 import styled from "styled-components";
+import Language from "../../common/types/language";
 
 type ISideNavProps = {
-
+    onLanguageChange: (language: Language) => any
 }
 
 const StyledSideNav = styled.div`
@@ -33,13 +34,34 @@ const StyledLi = styled.li`
 `
 
 const LanguagesDropdown = (props: any) => {
-    const languages = ['TS', 'C#', 'C']
+    const languages : Array<Language> = [
+        {
+            displayName: 'TS',
+            value:'typescript'
+        },
+        {
+            displayName: 'JS',
+            value:'javascript'
+        },
+        {
+            displayName: 'C#',
+            value:'csharp'
+        },
+        {
+            displayName: 'C++',
+            value:'cpp'
+        },
+         {
+            displayName: 'JSON',
+            value:'JSON'
+        }
+    ]
 
     return(
         <ul {...props}>
             {languages.map(l =>
                 <StyledLi onClick={() => props.setCurrentLanguage(l)}>
-                    {l}
+                    {l.displayName}
                 </StyledLi>
             )}
         </ul>
@@ -54,7 +76,7 @@ const StyledLanguagesDropdown = styled(LanguagesDropdown)`
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   ${({ show }) => !show && `display: none`}
 `
 
@@ -64,7 +86,7 @@ const LanguageSelector = (props: any) => {
     return(
         <React.Fragment>
             <div onClick = {() => setShowLanguages(!showLanguages)} {...props}>
-                {props.currentLanguage}
+                {props.currentLanguage.displayName}
                 <StyledLanguagesDropdown show={showLanguages} setCurrentLanguage={props.setCurrentLanguage} />
             </div>
 
@@ -86,7 +108,12 @@ const StyledLanguageSelector = styled(LanguageSelector)`
 `
 
 const SideNav : FunctionComponent<ISideNavProps> = (props) => {
-    const [currentLanguage, setCurrentLanguage] = useState('TS')
+    const [currentLanguage, setCurrentLanguage] = useState<Language>({value:'typescript', displayName:'TS'})
+
+    const updateCurrentLanguage = (language: Language) => {
+        setCurrentLanguage(language)
+        props.onLanguageChange(language)
+    }
 
     return (
         <React.Fragment>
@@ -96,7 +123,7 @@ const SideNav : FunctionComponent<ISideNavProps> = (props) => {
                         <span>Current document</span>
                         <StyledLanguageSelector
                             currentLanguage={currentLanguage}
-                            setCurrentLanguage={setCurrentLanguage} />
+                            setCurrentLanguage={updateCurrentLanguage} />
                     </StyledTitle>
                 </StyledSideNavItem>
             </StyledSideNav>

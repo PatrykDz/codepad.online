@@ -10,6 +10,7 @@ import {
 } from 'office-ui-fabric-react';
 import {snippetService} from '../../services/snippetService'
 import SideNav from "../../components/SideNavComponent";
+import Language from "../../common/types/language";
 
 interface ICreateSnippetPageProps {
     match: any
@@ -47,7 +48,7 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
     const [code, setCode] = useState('');
     const [editor, setEditor] = useState(undefined);
     const [saved, setSaved] = useState(true);
-
+    const [currentLanguage, setCurrentLanguage] = useState({value: 'typescript', displayName:'TS'})
 
     useEffect(() => {
         const urlId = props.match.params.urlId || ''
@@ -112,57 +113,18 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
         gridTemplateRows: '15fr 1fr'
     };
 
-    const onLinkClick = () => console.log('click');
+    const onLanguageChange = (language: Language) => {
+        setCurrentLanguage(language)
+    }
 
     return (
         <React.Fragment>
             <div style={containerStyle} onKeyDown={handleKeyDown}>
-                <SideNav />
-
-                {/*<Nav*/}
-                {/*    onLinkClick={onLinkClick}*/}
-                {/*    selectedKey="key1"*/}
-                {/*    expandButtonAriaLabel="Expand or collapse"*/}
-                {/*    selectedAriaLabel="Selected"*/}
-                {/*    ariaLabel="Nav basic example"*/}
-                {/*    styles={{*/}
-                {/*        root: {*/}
-                {/*            boxSizing: 'border-box',*/}
-                {/*            overflowY: 'auto'*/}
-                {/*        }*/}
-                {/*    }}*/}
-                {/*    groups={[*/}
-                {/*        {*/}
-                {/*            links: [*/}
-                {/*                {*/}
-                {/*                    name: 'Documents',*/}
-                {/*                    url: '',*/}
-                {/*                    links: [*/}
-                {/*                        {*/}
-                {/*                            name: 'Current Document',*/}
-                {/*                            url: '',*/}
-                {/*                            key: 'key1',*/}
-                {/*                            target: '_blank',*/}
-                {/*                            isExpanded: true*/}
-                {/*                        },*/}
-                {/*                        {*/}
-                {/*                            name: '+ New Document',*/}
-                {/*                            url: '',*/}
-                {/*                            disabled: true,*/}
-                {/*                            key: 'key2',*/}
-                {/*                            target: '_blank'*/}
-                {/*                        }*/}
-                {/*                    ],*/}
-                {/*                    isExpanded: true*/}
-                {/*                },*/}
-                {/*            ]*/}
-                {/*        }*/}
-                {/*    ]}*/}
-                {/*/>*/}
+                <SideNav onLanguageChange={onLanguageChange} />
                 <MonacoEditor
                     width="100%"
                     height="100%"
-                    language="typescript"
+                    language={currentLanguage.value}
                     theme="vs-dark"
                     value={code}
                     options={options}

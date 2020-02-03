@@ -1,8 +1,8 @@
 import React, {FunctionComponent} from 'react'
-import {Spinner} from 'office-ui-fabric-react/lib/Spinner';
 import styled from 'styled-components'
 
 import {snippetService} from '../../services/snippetService'
+import Spinner from '../../components/Spinner/index'
 
 const StyledContainer = styled.div`
           position: absolute;

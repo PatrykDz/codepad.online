@@ -8,7 +8,7 @@ type ISideNavProps = {
 
 const StyledSideNav = styled.div`
   display: flex;  
-  background-color: white;
+  background-color: #F0F5FB;
 `
 
 const StyledSideNavItem = styled.div`
@@ -29,7 +29,7 @@ const StyledTitle = styled.div`
 
 const StyledLi = styled.li`
   &:hover {
-    background-color: #A9A9A9;
+    background-color: #FFF;
   }
 `
 

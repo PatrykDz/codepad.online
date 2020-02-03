@@ -1,13 +1,6 @@
 import React, {FunctionComponent, useState, EventHandler, CSSProperties, useEffect, useContext} from 'react'
 import styled from 'styled-components';
 import MonacoEditor from 'react-monaco-editor';
-import {Nav} from 'office-ui-fabric-react/lib/Nav';
-import {
-    MessageBarButton,
-    Link,
-    MessageBar,
-    MessageBarType,
-} from 'office-ui-fabric-react';
 import {snippetService} from '../../services/snippetService'
 import SideNav from "../../components/SideNavComponent";
 import Language from "../../common/types/language";
@@ -21,26 +14,26 @@ const StyledDefaultMessageContainer = styled.div`
   color: red;
 `
 
-const DefaultMessage = () => (
-    <MessageBar messageBarType={MessageBarType.success}>
-        All changes are saved
-    </MessageBar>
-);
-
-const UnsavedChanges = (props: any) => (
-    <MessageBar
-        messageBarType={MessageBarType.warning}
-        isMultiline={false}
-        dismissButtonAriaLabel="Save"
-        actions={
-            <div>
-                <MessageBarButton onClick={() => props.handleSave()}>Save</MessageBarButton>
-            </div>
-        }
-    >
-        You have unsaved changes. Press <Link>Ctrl + S</Link> to save.
-    </MessageBar>
-);
+// const DefaultMessage = () => (
+//     <MessageBar messageBarType={MessageBarType.success}>
+//         All changes are saved
+//     </MessageBar>
+// );
+//
+// const UnsavedChanges = (props: any) => (
+//     <MessageBar
+//         messageBarType={MessageBarType.warning}
+//         isMultiline={false}
+//         dismissButtonAriaLabel="Save"
+//         actions={
+//             <div>
+//                 <MessageBarButton onClick={() => props.handleSave()}>Save</MessageBarButton>
+//             </div>
+//         }
+//     >
+//         You have unsaved changes. Press <Link>Ctrl + S</Link> to save.
+//     </MessageBar>
+// );
 
 const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
     props) => {
@@ -132,9 +125,9 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
                     onChange={onChange}
                 />
 
-                <StyledDefaultMessageContainer>
-                    {saved ? <DefaultMessage/> : <UnsavedChanges handleSave={() => handleSave()}/>}
-                </StyledDefaultMessageContainer>
+                {/*<StyledDefaultMessageContainer>*/}
+                {/*    {saved ? <DefaultMessage/> : <UnsavedChanges handleSave={() => handleSave()}/>}*/}
+                {/*</StyledDefaultMessageContainer>*/}
             </div>
         </React.Fragment>
     )

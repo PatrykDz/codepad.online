@@ -1,21 +1,55 @@
 import React, {FunctionComponent, useState} from 'react'
 import styled from "styled-components";
 import Language from "../../common/types/language";
+import Theme from '../../common/theme'
+import {StyledLanguageSelector} from "../LanguageSelectorComponent/languageSelector.component";
 
 type ISideNavProps = {
     onLanguageChange: (language: Language) => any
 }
 
+type IActiveProps = {
+    active?: boolean
+}
+
+type ISideNavItemProps = {
+    className?: any,
+    active?: boolean,
+    currentLanguage: Language,
+    setCurrentLanguage: (language: Language) => any
+}
+
 const StyledSideNav = styled.div`
-  display: flex;  
-  background-color: #F0F5FB;
+  width: 430px; // WIP: adjust to grid. Hardcoded for now!!!
+  display: flex;
+  flex-direction: column;
+  background-color: ${Theme.colors.primary.gray};
 `
 
-const StyledSideNavItem = styled.div`
+const StyledSpan = styled.span<IActiveProps>`
+  color: ${({ active }) => active ? Theme.colors.primary.white : Theme.colors.primary.kashmirBlue};
+`
+
+const SideNavItem = (props: ISideNavItemProps) => {
+    return (
+        <React.Fragment>
+            <StyledTitle className={props.className}>
+                <StyledSpan active={props.active}>Current document</StyledSpan>
+                <StyledLanguageSelector
+                    currentLanguage={props.currentLanguage}
+                    setCurrentLanguage={props.setCurrentLanguage}/>
+            </StyledTitle>
+        </React.Fragment>
+    );
+}
+
+const StyledSideNavItem = styled(SideNavItem)`
   display: flex;
-  background-color: lightgray;
-  height: 50px;
+  margin: 5px;
+  background-color: ${({ active }) => active ? Theme.colors.primary.primaryBlue : Theme.colors.primary.white};
+  height: 70px;
   width: 100%;
+  border-radius: 10px;
 `
 
 const StyledTitle = styled.div`
@@ -27,90 +61,10 @@ const StyledTitle = styled.div`
    margin: 20px;
 `
 
-const StyledLi = styled.li`
-  &:hover {
-    background-color: #FFF;
-  }
-`
+const SideNav: FunctionComponent<ISideNavProps> = (props) => {
+    const [currentLanguage, setCurrentLanguage] = useState<Language>({value: 'typescript', displayName: 'TS'})
 
-const LanguagesDropdown = (props: any) => {
-    const languages : Array<Language> = [
-        {
-            displayName: 'TS',
-            value:'typescript'
-        },
-        {
-            displayName: 'JS',
-            value:'javascript'
-        },
-        {
-            displayName: 'C#',
-            value:'csharp'
-        },
-        {
-            displayName: 'C++',
-            value:'cpp'
-        },
-         {
-            displayName: 'JSON',
-            value:'JSON'
-        }
-    ]
-
-    return(
-        <ul {...props}>
-            {languages.map(l =>
-                <StyledLi onClick={() => props.setCurrentLanguage(l)}>
-                    {l.displayName}
-                </StyledLi>
-            )}
-        </ul>
-    )
-}
-
-const StyledLanguagesDropdown = styled(LanguagesDropdown)`
-  position: absolute;
-  left: 0;
-  font-size: 16px;
-  background-color: gray;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  ${({ show }) => !show && `display: none`}
-`
-
-const LanguageSelector = (props: any) => {
-    const [showLanguages, setShowLanguages] = useState(false)
-
-    return(
-        <React.Fragment>
-            <div onClick = {() => setShowLanguages(!showLanguages)} {...props}>
-                {props.currentLanguage.displayName}
-                <StyledLanguagesDropdown show={showLanguages} setCurrentLanguage={props.setCurrentLanguage} />
-            </div>
-
-        </React.Fragment>
-    )
-}
-
-const StyledLanguageSelector = styled(LanguageSelector)`
-  position: relative;
-  cursor: pointer;
-  color: white;
-  font-size: 12px;
-  padding: 5px;
-  background-color: gray;
-  
-  &:hover {
-    background-color: #A9A9A9;
-  }
-`
-
-const SideNav : FunctionComponent<ISideNavProps> = (props) => {
-    const [currentLanguage, setCurrentLanguage] = useState<Language>({value:'typescript', displayName:'TS'})
-
-    const updateCurrentLanguage = (language: Language) => {
+    const updateCurrentLanguage: (language: Language) => any = (language) => {
         setCurrentLanguage(language)
         props.onLanguageChange(language)
     }
@@ -118,14 +72,13 @@ const SideNav : FunctionComponent<ISideNavProps> = (props) => {
     return (
         <React.Fragment>
             <StyledSideNav>
-                <StyledSideNavItem>
-                    <StyledTitle>
-                        <span>Current document</span>
-                        <StyledLanguageSelector
-                            currentLanguage={currentLanguage}
-                            setCurrentLanguage={updateCurrentLanguage} />
-                    </StyledTitle>
-                </StyledSideNavItem>
+                <StyledSideNavItem
+                    currentLanguage={currentLanguage}
+                    setCurrentLanguage={updateCurrentLanguage} />
+                <StyledSideNavItem
+                    active={true}
+                    currentLanguage={currentLanguage}
+                    setCurrentLanguage={updateCurrentLanguage} />
             </StyledSideNav>
         </React.Fragment>
     )

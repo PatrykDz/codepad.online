@@ -26,7 +26,9 @@ const StyledSideNav = styled.div`
   background-color: ${Theme.colors.primary.gray};
 `
 
-const StyledSpan = styled.span<IActiveProps>`
+const StyledTitleSpan = styled.span<IActiveProps>`
+  margin: auto auto auto 40px;
+  font-size: 21px;
   color: ${({ active }) => active ? Theme.colors.primary.white : Theme.colors.primary.kashmirBlue};
 `
 
@@ -34,7 +36,7 @@ const SideNavItem = (props: ISideNavItemProps) => {
     return (
         <React.Fragment>
             <StyledTitle className={props.className}>
-                <StyledSpan active={props.active}>Current document</StyledSpan>
+                <StyledTitleSpan active={props.active}>Current document</StyledTitleSpan>
                 <StyledLanguageSelector
                     currentLanguage={props.currentLanguage}
                     setCurrentLanguage={props.setCurrentLanguage}/>
@@ -45,20 +47,19 @@ const SideNavItem = (props: ISideNavItemProps) => {
 
 const StyledSideNavItem = styled(SideNavItem)`
   display: flex;
-  margin: 5px;
+  margin: 5px 20px 5px 5px;
   background-color: ${({ active }) => active ? Theme.colors.primary.primaryBlue : Theme.colors.primary.white};
   height: 70px;
-  width: 100%;
   border-radius: 10px;
 `
 
 const StyledTitle = styled.div`
    display: flex;
+   font-size: 16px;
    justify-content: space-between;
    align-self: center;
-   font-size: 16px;
-   width:100%;
-   margin: 20px;
+   align-items: center;
+   padding-right: 10px;
 `
 
 const SideNav: FunctionComponent<ISideNavProps> = (props) => {

@@ -47,7 +47,7 @@ const SideNavItem = (props: ISideNavItemProps) => {
 
 const StyledSideNavItem = styled(SideNavItem)`
   display: flex;
-  margin: 5px 20px 5px 5px;
+  margin: 5px 5px 5px 5px;
   background-color: ${({ active }) => active ? Theme.colors.primary.primaryBlue : Theme.colors.primary.white};
   height: 70px;
   border-radius: 10px;
@@ -55,9 +55,11 @@ const StyledSideNavItem = styled(SideNavItem)`
 
 const StyledTitle = styled.div`
    display: flex;
-   font-size: 16px;
+   align-self: auto;
    justify-content: space-between;
-   align-self: center;
+   font-family: ${Theme.font.default.fontFamily};
+   font-weight: ${Theme.font.default.fontWeight};
+   font-size: 16px;
    align-items: center;
    padding-right: 10px;
 `

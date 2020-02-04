@@ -49,6 +49,8 @@ const LanguagesDropdown = (props: any) => {
 const StyledLanguagesDropdown = styled(LanguagesDropdown)`
   position: absolute;
   left: 0;
+  font-family: ${Theme.font.default.fontFamily};
+  font-weight: ${Theme.font.default.fontWeight};
   font-size: 16px;
   background-color: ${Theme.colors.primary.violetRed};
   list-style: none;
@@ -58,6 +60,9 @@ const StyledLanguagesDropdown = styled(LanguagesDropdown)`
   ${({ show }) => !show && `display: none`}
 `
 
+const StyledLanguageSelectorText = styled.span`
+  line-height: 42px; // WIP: make flexible later
+`
 
 const LanguageSelector = (props: any) => {
     const [showLanguages, setShowLanguages] = useState(false)
@@ -65,7 +70,7 @@ const LanguageSelector = (props: any) => {
     return(
         <React.Fragment>
             <div onClick = {() => setShowLanguages(!showLanguages)} {...props}>
-                {props.currentLanguage.displayName}
+                <StyledLanguageSelectorText>{props.currentLanguage.displayName}</StyledLanguageSelectorText>
                 <StyledLanguagesDropdown show={showLanguages} setCurrentLanguage={props.setCurrentLanguage} />
             </div>
 

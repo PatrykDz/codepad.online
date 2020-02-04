@@ -4,6 +4,7 @@ import MonacoEditor from 'react-monaco-editor';
 import {snippetService} from '../../services/snippetService'
 import SideNav from "../../components/SideNavComponent";
 import Language from "../../common/types/language";
+import TopNav from "../../components/TopNavComponent";
 
 interface ICreateSnippetPageProps {
     match: any
@@ -103,16 +104,21 @@ const CreateSnippetPage: FunctionComponent<ICreateSnippetPageProps> = (
         width: '100%',
         height: '100vh',
         gridTemplateColumns: '2fr 10fr',
-        gridTemplateRows: '15fr 1fr'
+        gridTemplateRows: 'auto 15fr 1fr'
     };
 
     const onLanguageChange = (language: Language) => {
         setCurrentLanguage(language)
     }
 
+    const StyledTopNav = styled(TopNav)`
+      grid-column: 1/4
+    `
+
     return (
         <React.Fragment>
             <div style={containerStyle} onKeyDown={handleKeyDown}>
+                <StyledTopNav />
                 <SideNav onLanguageChange={onLanguageChange} />
                 <MonacoEditor
                     width="100%"

@@ -27,6 +27,6 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'DockerHub Container Registry'
-        repository: 'codepad'
+        repository: 'patrykdz/codepad'
         command: 'buildAndPush'
         Dockerfile: '**/codepad.api/Dockerfile'

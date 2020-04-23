@@ -21,6 +21,11 @@ spec:
       - name: codepad-api
         image: patrykdz/codepad:38
         resources: {}
+        env:
+        - name: "ASPNETCORE_ENVIRONMENT"
+          value: "Development"
+        - name: "MongoConfig__ConnectionString"
+          value: "mongodb://root:example@mongodb:27017"
       imagePullSecrets:
       - name: regcred
 status: {}

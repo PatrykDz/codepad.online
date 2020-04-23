@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: codepad
-  name: codepad
+    app: codepad.api
+  name: codepad.api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: codepad
+      app: codepad.api
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: codepad
+        app: codepad.api
     spec:
       containers:
-      - image: codepad
-        name: codepad
+      - image: codepad:38
+        name: codepad.api
         resources: {}
 status: {}

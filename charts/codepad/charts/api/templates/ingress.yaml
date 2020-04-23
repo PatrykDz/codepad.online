@@ -4,10 +4,14 @@ metadata:
   name: codepad-ingress
 spec:
   rules:
-  - host: codepad-api-patrykdz.cloud.okteto.net
+  - host: api.codepad.local # codepad-api-patrykdz.cloud.okteto.net
     http:
       paths:
-      - path: /weatherforecast
+      - path: /
         backend:
           serviceName: codepad-api
           servicePort: 5000
+
+# Configure ingress in Kind (k8s in docker)
+# https://kind.sigs.k8s.io/docs/user/ingress/
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml

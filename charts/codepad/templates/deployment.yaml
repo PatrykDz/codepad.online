@@ -3,22 +3,26 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: codepad.api
-  name: codepad.api
+    app: codepad-api
+  name: codepad-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: codepad.api
+      app: codepad-api
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: codepad.api
+        app: codepad-api
     spec:
       containers:
-      - image: codepad:38
-        name: codepad.api
+      - name: codepad-api
+        image: patrykdz/codepad:38
         resources: {}
+      imagePullSecrets:
+      - name: regcred
 status: {}
+
+# kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>

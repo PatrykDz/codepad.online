@@ -6,8 +6,8 @@ parameters:
 - name: name  # defaults for any parameters that aren't specified
   default: '[codepad.online] API'
   
-trigger:
-- master
+# trigger:
+# - master
 
 resources:
 - repo: self

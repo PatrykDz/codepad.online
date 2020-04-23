@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: codepad
+  name: codepad
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: codepad
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: codepad
+    spec:
+      containers:
+      - image: codepad
+        name: codepad
+        resources: {}
+status: {}

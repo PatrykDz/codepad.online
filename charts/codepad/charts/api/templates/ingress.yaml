@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: codepad-ingress
+spec:
+  rules:
+  - host: codepad-api-patrykdz.cloud.okteto.net
+    http:
+      paths:
+      - path: /weatherforecast
+        backend:
+          serviceName: codepad-api
+          servicePort: 5000

@@ -2,8 +2,10 @@
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
-name: "[codepad.online] API"
-
+parameters:
+- name: name  # defaults for any parameters that aren't specified
+  default: '[codepad.online] API'
+  
 trigger:
 - master
 

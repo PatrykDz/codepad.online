@@ -38,3 +38,5 @@ codepad.api/CodePad.Adapters.Mongo/bin
 codepad.api/CodePad.Adapters.Mongo/obj
 codepad.api/CodePad.Domain/bin
 codepad.api/CodePad.Domain/obj
+codepad.api/.vs
+codepad.api/.vs

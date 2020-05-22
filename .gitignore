@@ -32,11 +32,11 @@ yarn-debug.log*
 yarn-error.log*
 
 **/bin
-codepad.api/Snippet/CodePad.Snippet.Api/bin
-codepad.api/Snippet/CodePad.Snippet.Api/obj
-codepad.api/Snippet/CodePad.Snippet.Adapters.Mongo/bin
-codepad.api/Snippet/CodePad.Snippet.Adapters.Mongo/obj
-codepad.api/Snippet/CodePad.Snippet.Domain/bin
-codepad.api/Snippet/CodePad.Snippet.Domain/obj
+codepad.api/Modules/Snippet/CodePad.Snippet.Adapters.Api/bin
+codepad.api/Modules/Snippet/CodePad.Snippet.Adapters.Api/obj
+codepad.api/Modules/Snippet/CodePad.Snippet.Adapters.Mongo/bin
+codepad.api/Modules/Snippet/CodePad.Snippet.Adapters.Mongo/obj
+codepad.api/Modules/Snippet/CodePad.Snippet.Domain/bin
+codepad.api/Modules/Snippet/CodePad.Snippet.Domain/obj
 codepad.api/.vs
 codepad.api/.vs

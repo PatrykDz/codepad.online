@@ -1,6 +1,6 @@
 using CodePad.Adapters.Mongo;
 using CodePad.Adapters.Mongo.Snippets;
-using CodePad.Domain.Repositories;
+using CodePad.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

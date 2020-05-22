@@ -8,6 +8,5 @@ namespace CodePad.Domain.Services
         Snippet CreateSnippet(Snippet snippet);
         Snippet GetById(Guid id);
         Snippet GetByUrlId(string urlId);
-        string GenerateUniqueUrlId();
     }
 }

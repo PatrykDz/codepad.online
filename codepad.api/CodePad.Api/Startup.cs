@@ -1,5 +1,7 @@
 using CodePad.Adapters.Mongo;
 using CodePad.Adapters.Mongo.Snippets;
+using CodePad.Api.Services;
+using CodePad.Domain.Repositories;
 using CodePad.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,7 +33,12 @@ namespace CodePad.Api
             services.AddControllers();
 
             // IoC
+            // Services
             services.AddScoped<ISnippetsService, SnippetsService>();
+            services.AddScoped<ISnippetsUrlService, SnippetsUrlService>();
+
+            // Repositories
+            services.AddScoped<ISnippetsRepository, SnippetsRepository>(); // PROBABLY MOVE TO ADAPTER
 
 
             // CORS

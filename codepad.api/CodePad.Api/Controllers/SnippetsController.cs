@@ -11,10 +11,14 @@ namespace CodePad.Api.Controllers
     public class SnippetsController : ControllerBase
     {
         private readonly ISnippetsService _snippetsService;
+        private readonly ISnippetsUrlService _snippetsUrlService;
 
-        public SnippetsController(ISnippetsService snippetsService)
+        public SnippetsController(
+            ISnippetsService snippetsService, 
+            ISnippetsUrlService snippetsUrlService)
         {
             _snippetsService = snippetsService;
+            _snippetsUrlService = snippetsUrlService;
         }
 
         [HttpGet]
@@ -40,7 +44,7 @@ namespace CodePad.Api.Controllers
         [Route("newUrlId")]
         public IActionResult GetNewUrlId()
         {
-            var urlId = _snippetsService.GenerateUniqueUrlId();
+            var urlId = _snippetsUrlService.GenerateUniqueUrlId();
             return Ok(new {urlId});
         }
 

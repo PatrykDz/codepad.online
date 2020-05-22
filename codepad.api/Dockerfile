@@ -6,9 +6,9 @@ ENV ASPNETCORE_URLS http://+:5000;https://+:5001
 FROM mcr.microsoft.com/dotnet/core/sdk:3.0 AS build
 WORKDIR /src
 COPY CodePad.sln ./
-COPY CodePad.Api/*.csproj ./CodePad.Api/
-COPY CodePad.Domain/*.csproj ./CodePad.Domain/
-COPY CodePad.Adapters.Mongo/*.csproj ./CodePad.Adapters.Mongo/
+COPY Modules/Snippet/CodePad.Snippet.Adapters.Api/*.csproj ./Modules/Snippet/CodePad.Snippet.Adapters.Api/
+COPY Modules/Snippet/CodePad.Snippet.Domain/*.csproj ./Modules/Snippet/CodePad.Snippet.Domain/
+COPY Modules/Snippet/CodePad.Snippet.Adapters.Mongo/*.csproj ./Modules/Snippet/CodePad.Snippet.Adapters.Mongo/
 
 RUN dotnet restore
 COPY . .
@@ -21,4 +21,4 @@ RUN dotnet publish -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "CodePad.Api.dll"]
+ENTRYPOINT ["dotnet", "CodePad.Snippet.Adapters.Api.dll"]

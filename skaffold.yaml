@@ -1,0 +1,18 @@
+apiVersion: skaffold/v2beta4
+kind: Config
+metadata:
+  name: codepad.online
+build:
+  artifacts:
+  - image: patrykdz/codepad
+    context: codepad.api
+deploy:
+  kubectl:
+    manifests:
+    - charts/codepad/charts/api/templates/deployment.yaml
+    - charts/codepad/charts/api/templates/ingress.yaml
+    - charts/codepad/charts/api/templates/service.yaml
+    - charts/codepad/charts/database/templates/deployment.yaml
+    - charts/codepad/charts/database/templates/mongo-pvc.yaml
+    - charts/codepad/charts/database/templates/mongo-secret.yaml
+    - charts/codepad/charts/database/templates/mongo-service.yaml

@@ -1,9 +1,0 @@
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\bin\Debug\netcoreapp3.0\CodePad.Domain.deps.json
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\bin\Debug\netcoreapp3.0\CodePad.Domain.dll
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\bin\Debug\netcoreapp3.0\CodePad.Domain.pdb
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\obj\Debug\netcoreapp3.0\CodePad.Domain.csproj.CoreCompileInputs.cache
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\obj\Debug\netcoreapp3.0\CodePad.Domain.AssemblyInfoInputs.cache
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\obj\Debug\netcoreapp3.0\CodePad.Domain.AssemblyInfo.cs
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\obj\Debug\netcoreapp3.0\CodePad.Domain.dll
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\obj\Debug\netcoreapp3.0\CodePad.Domain.pdb
-C:\Fun\Projects\codepad.online\codepad.api\CodePad.Domain\obj\Debug\netcoreapp3.0\CodePad.Domain.csprojAssemblyReference.cache

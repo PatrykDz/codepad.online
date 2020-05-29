@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: codepad-frontend
+  name: codepad-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: codepad-frontend
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: codepad-frontend
+    spec:
+      containers:
+      - name: codepad-frontend
+        image: patrykdz/codepad-frontend:42
+        resources: {}
+        env:
+        - name: "ASPNETCORE_ENVIRONMENT"
+          value: "Development"
+        - name: "MongoConfig__ConnectionString"
+          value: "mongodb://root:example@mongodb:27017"
+      imagePullSecrets:
+      - name: regcred
+status: {}
+
+# kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>

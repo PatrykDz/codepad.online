@@ -6,6 +6,8 @@ build:
   artifacts:
   - image: patrykdz/codepad
     context: codepad.api
+  - image: patrykdz/codepad-frontend
+    context: codepad
 deploy:
   kubectl:
     manifests:
@@ -16,3 +18,6 @@ deploy:
     - charts/codepad/charts/database/templates/mongo-pvc.yaml
     - charts/codepad/charts/database/templates/mongo-secret.yaml
     - charts/codepad/charts/database/templates/mongo-service.yaml
+    - charts/codepad/charts/frontend/templates/deployment.yaml
+    - charts/codepad/charts/frontend/templates/ingress.yaml
+    - charts/codepad/charts/frontend/templates/service.yaml

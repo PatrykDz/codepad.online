@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: codepad-frontend-ingress
+spec:
+  rules:
+  - host: codepad.local # codepad-api-patrykdz.cloud.okteto.net
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: codepad-frontend
+          servicePort: 5000
+
+# Configure ingress in Kind (k8s in docker)
+# https://kind.sigs.k8s.io/docs/user/ingress/
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
